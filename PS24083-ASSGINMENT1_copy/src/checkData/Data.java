@@ -6,7 +6,8 @@ import javax.swing.JOptionPane;
 public class Data extends JFrame {
 
     public boolean checkEmail(String e) {
-        String parttern = "^\\w{3,}@\\w{2,}(\\.[a-zA-Z]{2,3}){1,2}$";
+       String parttern = "^\\w{3,}@\\w{2,}(\\.[a-zA-Z]{2,3}){1,2}$";
+
         return e.matches(parttern);
     }
 //    public boolean checksdt(String s){
@@ -25,13 +26,15 @@ public class Data extends JFrame {
     }
 
     public boolean checkName(String name) {
+            
         if (name.length() < 10) {
             return false;
         }
+        
 //        String parttern = "[^0-9]";
 //        return name.matches(parttern);
-        return true;
-
+//        return name.matches(parttern);
+            return true;
     }
 
     public boolean checkAge(String age) throws Exception {
